@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'play_game/game'
+
+  get 'play_game/score'
+
+  get 'game', to: 'play_game#game'
+  get 'score', to: 'play_game#score'
+
 end
